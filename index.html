@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="mainpage.css">
+</head>
+<body>
+    <div class="container" id="page1">
+        <div class="typewriter">Happy Birthday, Neha!</div>
+
+        <div class="box-words">
+            <div style="background-image: url('pictures/image1.jpg');">H</div>
+            <div style="background-image:url('pictures/image2.jpg') ;">A</div>
+            <div style="background-image:url('pictures/image3.jpg') ;">P</div>
+            <div style="background-image:url('pictures/image4.jpg') ;">P</div>
+            <div style="background-image:url('pictures/image5.jpg') ;">Y</div>
+        </div>
+
+        <div class="box-words">
+            <div style="background-image:url('pictures/image6.jpg') ;">B</div>
+            <div style="background-image:url('pictures/image7.jpg') ;">I</div>
+            <div style="background-image:url('pictures/image8.jpg') ;">R</div>
+            <div style="background-image:url('pictures/image9.jpg') ;">T</div>
+            <div style="background-image:url('pictures/image10.jpg') ;">H</div>
+            <div style="background-image:url('pictures/image11.jpg') ;">D</div>
+            <div style="background-image:url('pictures/image12.jpg') ;">A</div>
+            <div style="background-image:url('pictures/image14.jpg') ;">Y</div>
+        </div>
+
+        <div class="images">
+            <img src="pictures/image13.jpg" alt="Memory 1">
+            <img src="pictures/image15.jpg" alt="Memory 2">
+            <img src="pictures/image16.jpg" alt="Memory 3">
+        </div>
+
+        <div class="page-button">
+            <button onclick="showPage(2)">Next Page</button>
+        </div>
+    </div>
+
+    <div class="container" id="page2" style="display: none;">
+        <div class="flipping-cards">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">Roses are red,</div>
+                    <div class="card-back">And so are you.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">On this special day,</div>
+                    <div class="card-back">Let joy shine through.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">Wishing you happiness,</div>
+                    <div class="card-back">Today and always.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-button">
+            <button  id="next-btn">next-page</button>
+        </div>
+    </div>
+        <script src="script.js"></script>
+    </body>
+</html>

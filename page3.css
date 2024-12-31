@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0e68c;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.birthday-box {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background: url('pictures/image17.jpg') no-repeat center/cover;
+    position: relative;
+    animation: openBox 2s ease-out forwards;
+}
+
+.reveal-text {
+    font-size: 0;
+    color: #d2691e;
+    animation: reveal 3s ease forwards;
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 4s steps(40, end) forwards, blink-caret .75s step-end infinite;
+}
+
+@keyframes openBox {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.8); }
+    100% { transform: scale(1.2); }
+}
+
+@keyframes reveal {
+    0% { font-size: 0; }
+    100% { font-size: 2em; }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}

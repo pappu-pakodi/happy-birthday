@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="typewriter">Happy Birthday, Neha!</div>
+
+        <div class="gift-box" onclick="openGift()"></div>
+        <button id="next" style="width:30vmin; height:4vmin; background-color:rgb(246, 69, 69); outline:none; border:none;border-radius:10px;">Click the Upper Box</button>
+        
+        <div id="message" class="hidden-message">You make my world brighter every day. 💖</div>
+
+        <div class="images" id="image-container">
+            <img src="pictures/image24.jpg" alt="Memorable moment 1">
+            <img src="pictures/image23.jpg" alt="Memorable moment 2">
+            <img src="pictures/image21.jpg" alt="Memorable moment 3">
+            <img src="pictures/image19.jpg" alt="Memorable moment 4">
+            <img src="pictures/image20.jpg" alt="Memorable moment 5">
+        </div>
+
+        <div class="flipping-cards">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">Beautiful</div>
+                    <div class="card-back">Kind-hearted</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">Cute</div>
+                    <div class="card-back">Caring</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">Pampering</div>
+                    <div class="card-back">Loving</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="page2.js"></script>
+</body>
+</html>
